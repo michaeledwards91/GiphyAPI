@@ -7,7 +7,6 @@ var queryURL = "http://api.giphy.com/v1/gifs/search?q=";
 
 function renderButtons(){ 
 	$(".giphyButtons").html("");
-	// YOUR CODE GOES HERE
 	for (var i = 0; i < animalsArray.length; i++) {
 		var newButton = $("<button>");
 		newButton.html(animalsArray[i]);
@@ -56,8 +55,9 @@ $(document).ready(function () {
 			$(".gifs").html(""); //empty previous gifs before populating
 			for (var i = 0; i < response.data.length; i++) {
 				console.log(response.data[i]);
-				$(".gifs").append("Rating: " + response.data[i].rating);
 				//load images as stills
+				var newDiv = $("<div>");
+				newDiv.attr("class", "gifWrapper");
 				var newImg = $("<img>");
 				newImg.attr("class", "still");
 				var stillURL = response.data[i].images.fixed_height_still.url;
@@ -65,7 +65,9 @@ $(document).ready(function () {
 				newImg.attr("data-stillLink", stillURL);
 				newImg.attr("data-gifLink", gifURL);
 				newImg.attr("src", stillURL);
-				$(".gifs").append(newImg);
+				newDiv.append(newImg);
+				newDiv.append("<div class='rating'>Rating: " + response.data[i].rating + "</div>");
+				$(".gifs").append(newDiv);
 			}
 		})
 	})

@@ -1,0 +1,29 @@
+body {
+	background-color: #556270;
+}
+.gifWrapper {
+	float: left;
+	margin: 10px;
+}
+.btn-primary {
+	background-color: #C44D58;
+}
+label {
+	color: white;
+}
+.giphyButtons {
+	margin: 10px;
+}
+.animalButton {
+	margin-right: 5px;
+}
+.rating {
+	color: white;
+	text-align: center;
+}
+img {
+	margin-bottom: 2px;
+}
+#addAnimal {
+	margin-top: 5px;
+}
