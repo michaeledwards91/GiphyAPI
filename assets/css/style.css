@@ -16,6 +16,7 @@ label {
 }
 .animalButton {
 	margin-right: 5px;
+	margin-bottom: 8px;
 }
 .rating {
 	color: white;
@@ -26,4 +27,7 @@ img {
 }
 #addAnimal {
 	margin-top: 5px;
+}
+#animal-input {
+	line-height: 20px;
 }
