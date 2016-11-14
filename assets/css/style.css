@@ -1,33 +1,33 @@
 body {
-	background-color: #556270;
-}
-.gifWrapper {
-	float: left;
-	margin: 10px;
-}
-.btn-primary {
-	background-color: #C44D58;
-}
-label {
-	color: white;
-}
-.giphyButtons {
-	margin: 10px;
-}
-.animalButton {
-	margin-right: 5px;
-	margin-bottom: 8px;
-}
-.rating {
-	color: white;
-	text-align: center;
+    background-color: #556270;
 }
 img {
-	margin-bottom: 2px;
+    margin-bottom: 2px;
+}
+label {
+    color: white;
+}
+.gifWrapper {
+    float: left;
+    margin: 10px;
+}
+.btn-primary {
+    background-color: #C44D58;
+}
+.giphyButtons {
+    margin: 10px;
+}
+.animalButton {
+    margin-right: 5px;
+    margin-bottom: 8px;
+}
+.rating {
+    color: white;
+    text-align: center;
 }
 #addAnimal {
-	margin-top: 5px;
+    margin-top: 5px;
 }
 #animal-input {
-	line-height: 20px;
+    line-height: 20px;
 }

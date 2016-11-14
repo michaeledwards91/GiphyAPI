@@ -3,8 +3,6 @@ var animalsArray = ["Dog", "Cat", "Penguin", "Dinosaur", "Jellyfish", "Worm"];
 var apiKey = "&api_key=dc6zaTOxFJmzC";
 var queryURL = "http://api.giphy.com/v1/gifs/search?q=";
 
-
-
 function renderButtons(){ 
 	$(".giphyButtons").html("");
 	for (var i = 0; i < animalsArray.length; i++) {
@@ -19,7 +17,7 @@ function renderButtons(){
 }
 
 $(document).ready(function () {
-	console.log("this is running");
+
 	renderButtons();
 
 	$("#addAnimal").on("click", function (event) {
@@ -29,22 +27,6 @@ $(document).ready(function () {
 		renderButtons();
 		$("#animal-input").val("");
 	})
-
-	// $(".animalButton").on("click", function() {
-	// 	$.ajax({
-	// 		url: queryURL + this.dataset.name + "&limit=10" + apiKey,
-	// 		method: "GET"
-	// 	}).done(function(response) {
-	// 		console.log(response);
-	// 		$(".gifs").html(""); //empty previous gifs before populating
-	// 		for (var i = 0; i < response.data.length; i++) {
-	// 			console.log(response.data[i]);
-	// 			$(".gifs").append("Rating: " + response.data[i].rating);
-	// 			var imageURL = response.data[i].images.fixed_height.url;
-	// 			$(".gifs").append("<img src="+imageURL+">");
-	// 		}
-	// 	})
-	// })
 	
 	$(document).on("click", ".animalButton", function() {
 		$.ajax({
